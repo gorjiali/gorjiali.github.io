@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Head from 'next/head';
 import Navigation from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,13 +13,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </Head>
 
       <Navigation />
-
-      <main className="container mx-auto max-w-prose px-7 py-6 md:py-10 md:px-0">
+      <main className="container mx-auto max-w-prose px-7 py-6 md:py-10 md:px-0 min-h-[calc(100vh-180px)]">
         {children}
       </main>
-      <footer className="container mx-auto max-w-prose px-7 pb-10 md:px-0">
-        footer
-      </footer>
+      <Footer />
     </>
   );
 }
