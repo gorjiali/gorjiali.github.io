@@ -41,9 +41,9 @@ export default function Home() {
         </a>{' '}
         team.
       </p>
-      <p>
+{/*       <p>
         You can see more details in the work experience and projects sections.
-      </p>
+      </p> */}
       <p>
         Outside of programming, I enjoy traveling. Iran is a wonderful country
         to travel. From the forests and the beautiful sea in the north of the
